@@ -1,34 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="w-[100%] md:w-[1100px]  m-auto">
+        <nav className="w-[100%] h-[70px] bg-green-500 flex justify-between items-center p-3">
+            <h2 className="text-white text-2xl font-bold">J🤪keLand </h2>
+            <select className="p-3 bg-green-800 text-white rounded-md" name="" id="">
+                <option value="">ENG</option>
+                <option value="">FR</option>
+
+            </select>
+        </nav>
+        <section className="mt-10 w-[100%] p-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolorum excepturi asperiores nisi quasi itaque libero nostrum delectus optio distinctio, tempora sapiente omnis nobis odio doloremque soluta ab voluptatum corporis.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates qui nam perferendis unde incidunt placeat obcaecati asperiores. Veritatis sed rem libero nihil consequatur ducimus dignissimos? Earum repudiandae aperiam dicta mollitia!
+        </section>
+    </div>
   )
 }
 
