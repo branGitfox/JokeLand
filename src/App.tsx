@@ -1,6 +1,8 @@
 
 
+
 function App() {
+  
   return (
     <div className="w-[100%] md:w-[1100px]  m-auto bg-green-200">
         <nav className="w-[100%] h-[70px] bg-green-500 flex justify-between items-center p-3">
@@ -17,15 +19,6 @@ function App() {
         </section>
         <hr className="border-green-300"/>
         <div className="mt-5 flex flex-wrap w-[100%] gap-4 p-3 justify-evenly">
-              <div className="w-[300px] relative bg-red-300 ">
-                  <div className="w-[100%] p-3 mb-8">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
-                  </div>
-                  <button className=" py-3 px-5 bg-green-950 text-white  bottom-0 left-0 right-0 absolute">Show Answer</button>
-                  <div className="w-[100%] p-3 mb-10">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
-                  </div>
-              </div>
               <div className="w-[300px] relative bg-red-300 ">
                   <div className="w-[100%] p-3 mb-8">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
