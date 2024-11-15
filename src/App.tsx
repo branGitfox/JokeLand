@@ -27,8 +27,8 @@ function App() {
 
             <h2 className="text-white text-2xl font-bold">J🤪keLand </h2>
             <select onChange={(e) => changeLang(e.target.value)}  className="p-3 bg-green-800 text-white rounded-md" >
-                <option value="en">ENG</option>
-                <option  value="fr">FR</option>
+                <option value="en">ENG 🇺🇸</option>
+                <option  value="fr">FR 🇫🇷</option>
             </select>
         </nav>
         <section className="mt-10 w-[100%] p-3">
