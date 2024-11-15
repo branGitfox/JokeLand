@@ -32,7 +32,7 @@ function App() {
         </nav>
         <section className="mt-10 w-[100%] p-3">
             <h1 className="text-4xl mb-3 text-center font-bold ">{lang==='fr'?'Bienvenue':'Welcome'} 😂</h1>
-            <p className="text-center font-medium">{lang==='fr'?'Besoin de rigoler, d\'un fou rire?, owwwwh, ne vous inquietez pas, JokeLand va vous faire votre journee':'Need to laugh or a crazy laugh?, owwwwh , don\'t worry 😇, JokeLand gonna made your day!!!'}</p>
+            <p className="text-center font-medium">{lang==='fr'?'Besoin de rigoler, d\'un fou rire?, ne vous inquietez pas 😇, JokeLand va vous faire votre journée':'Need to laugh or a crazy laugh?, owwwwh , don\'t worry 😇, JokeLand gonna made your day!!!'}</p>
         </section>
         <hr className="border-green-300"/>
         <div className="mt-5 flex flex-wrap w-[100%] gap-4 p-3 justify-evenly">
