@@ -1,5 +1,5 @@
 import { useState } from "react"
-interface Jok {
+export type Jok= {
 setup:string,
 delivery:string,
 lang:string
