@@ -1,16 +1,30 @@
+import JokCard from "./components/JokCard"
+import { useGetJoksQuery } from "./assets/app/service/JokAPI"
+import { useState } from "react"
 
 
 
 function App() {
+  const [lang, setLang] = useState<string>('fr')
+  const changeLang = (lang:string) => {
+    setLang(lang)
+    console.log(lang);
+    
+  }
+
+  console.log(lang);
   
+
+  
+  const {data, isLoading} = useGetJoksQuery('fr')
+ 
   return (
-    <div className="w-[100%] md:w-[1100px]  m-auto bg-green-200">
+    <div className="w-[100%] md:w-[1100px] min-h-[100vh]  m-auto bg-green-200">
         <nav className="w-[100%] h-[70px] bg-green-500 flex justify-between items-center p-3">
             <h2 className="text-white text-2xl font-bold">J🤪keLand </h2>
-            <select className="p-3 bg-green-800 text-white rounded-md" name="" id="">
-                <option value="">ENG</option>
-                <option value="">FR</option>
-
+            <select onChange={(e) => changeLang(e.target.value)}  className="p-3 bg-green-800 text-white rounded-md" >
+                <option value="eng">ENG</option>
+                <option  value="fr">FR</option>
             </select>
         </nav>
         <section className="mt-10 w-[100%] p-3">
@@ -19,33 +33,7 @@ function App() {
         </section>
         <hr className="border-green-300"/>
         <div className="mt-5 flex flex-wrap w-[100%] gap-4 p-3 justify-evenly">
-              <div className="w-[300px] relative bg-red-300 ">
-                  <div className="w-[100%] p-3 mb-8">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
-                  </div>
-                  <button className=" py-3 px-5 bg-green-950 text-white  bottom-0 left-0 right-0 absolute">Show Answer</button>
-                  <div className="w-[100%] p-3 mb-10">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
-                  </div>
-              </div>
-              <div className="w-[300px] relative bg-red-300 ">
-                  <div className="w-[100%] p-3 mb-8">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
-                  </div>
-                  <button className=" py-3 px-5 bg-green-950 text-white  bottom-0 left-0 right-0 absolute">Show Answer</button>
-                  <div className="w-[100%] p-3 mb-10">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
-                  </div>
-              </div>
-              <div className="w-[300px] relative bg-red-300 ">
-                  <div className="w-[100%] p-3 mb-8">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
-                  </div>
-                  <button className=" py-3 px-5 bg-green-950 text-white  bottom-0 left-0 right-0 absolute">Show Answer</button>
-                  <div className="w-[100%] p-3 mb-10">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora quasi quas magnam cum repellat excepturi ducimus temporibus hic, quae velit, blanditiis reprehenderit maiores aliquid amet expedita debitis qui libero.
-                  </div>
-              </div>
+              <JokCard setup="kkkkkk" delivery="kkkkkkk" lang="fr"/>
         </div>
     </div>
   )
