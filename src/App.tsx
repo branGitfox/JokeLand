@@ -31,7 +31,7 @@ function App() {
             </select>
         </nav>
         <section className="mt-10 w-[100%] p-3">
-            <h1 className="text-4xl mb-3 text-center font-bold ">Haahahahahahah 🤣</h1>
+            <h1 className="text-4xl mb-3 text-center font-bold ">{lang==='fr'?'Bienvenue':'Welcome'} 😂</h1>
             <p className="text-center font-medium">{lang==='fr'?'Mauvaise journee?, owwwwh, ne vous inquietez pas, ce site va vous faire votre journee':'Bad day, owwwwh , don\'t worry 😇, this website gonna made your day!!!'}</p>
         </section>
         <hr className="border-green-300"/>
