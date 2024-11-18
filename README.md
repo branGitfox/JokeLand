@@ -1,5 +1,5 @@
 # JokeLand ⚡️🤪
-If you are sad or if you need some funny moment.Go to [JokeLand](https://joke-land.vercel.app).
+If you are sad or if you need some funny moment. Go to [JokeLand](https://joke-land.vercel.app).
 
 # To contribute
  Fork this repository and make a pull request
